@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.10/css/weather-icons.min.css">
+
+</head>
+<body>
+  <header>
+      <div  class="search box">
+        <input type="text" id="city" placeholder="Enter city name......"/>
+        <button id="searchBtn">Search</button>
+        <div class="unit-toggle">
+            <label>
+                <input type="checkbox" id="unitToggle" />
+                Show in °F
+            </label>
+        </div>
+        
+      </div>
+    </header>
+    <div class="main" id="weatherDisplay">
+
+        <div class="weather-box">
+            <div class="temp">
+                <span id="temp"></span>
+                <span id="degree">°C</span>
+            </div>
+            <div class="weather-info">
+                <span id="description"></span>
+            </div>
+            <div class="location">
+                <span id="cityName"></span>
+            </div>
+        </div>
+        <div class="weather-icon" id="icon"> <i class="wi"></i></div>
+        <div class="weather-details">
+            <div class="detail-box">
+                <span id="humidity"></span>
+                <span>Humidity</span>
+            </div>
+            <div class="detail-box">
+                <span id="wind"></span>
+                <span>Wind Speed</span>
+            </div>
+            <div class="detail-box">
+                <span id="pressure"></span>
+                <span>Pressure</span>
+            </div>
+           
+    </div>
+    <footer>
+        <div class="forecast" id="forecast"></div>
+        <div id="loader" class="hidden">Loading...</div>
+        <div id="error" class="error hidden"></div>
+
+    </footer>
+      <script src="script.js"></script>
+</body>
+</html>
